@@ -20,7 +20,7 @@
   <author>Sanghyun Kim</author>
  
   <buildtool_depend>catkin</buildtool_depend>
-
+  
   <build_depend>roscpp</build_depend>
   <build_depend>roslint</build_depend>
   <build_depend>rqt_gui</build_depend>
@@ -44,10 +44,9 @@
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
-
-  <!-- The export tag contains other, unspecified, tags -->
-  <export>
-    <!-- Other tools can request additional information be placed here -->
-    <rqt_gui plugin="${prefix}/plugin.xml"/>
+ 
+ <export>
+ <!--  Other tools can request additional information be placed here  -->
+ <rqt_gui plugin="${prefix}/plugin.xml"/>
   </export>
 </package>
