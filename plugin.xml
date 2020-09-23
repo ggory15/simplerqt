@@ -1,0 +1,12 @@
+<library path="lib/libtalos_wbc_gui">
+  <class name="tocabi_wbc_gui/TalosWBCGui" type="tocabi_wbc_gui::TalosWBCGui" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      An example Python GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+     
+      <label>SLMC Talos WBC Gui</label>
+      <statustip>GUI to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
