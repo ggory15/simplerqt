@@ -11,5 +11,9 @@ def add_arguments(parser):
 main = Main()
 sys.exit(main.main(
     sys.argv, 
+<<<<<<< HEAD
     standalone='talos_wbc_gui/MyPlugin',
+=======
+    standalone='talos_wbc_gui/TalosWBCGui',
+>>>>>>> 2b56c27807e53af2e5e8d33d05a3a7d50dd24bf5
     plugin_argument_provider=add_arguments))

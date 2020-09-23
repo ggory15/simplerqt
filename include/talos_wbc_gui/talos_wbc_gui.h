@@ -7,12 +7,12 @@
 
 namespace talos_wbc_gui {
 
-class MyPlugin
+class TalosWBCGui
   : public rqt_gui_cpp::Plugin
 {
   Q_OBJECT
 public:
-  MyPlugin();
+  TalosWBCGui();
   virtual void initPlugin(qt_gui_cpp::PluginContext& context);
   virtual void shutdownPlugin();
   virtual void saveSettings(qt_gui_cpp::Settings& plugin_settings, qt_gui_cpp::Settings& instance_settings) const;
