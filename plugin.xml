@@ -1,5 +1,5 @@
 <library path="lib/libtalos_wbc_gui">
-  <class name="talos_wbc_gui/TalosWBCGui" type="talos_wbc_gui::TalosWBCGui" base_class_type="rqt_gui_cpp::Plugin">
+  <class name="talos_wbc_gui/MyPlugin" type="talos_wbc_gui::MyPlugin" base_class_type="rqt_gui_cpp::Plugin">
     <description>
       An example Python GUI plugin to create a great user interface.
     </description>
