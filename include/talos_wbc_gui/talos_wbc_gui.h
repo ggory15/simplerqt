@@ -22,7 +22,7 @@ public:
   //bool hasConfiguration() const;
   //void triggerConfiguration();
 private:
-  Ui::MyPluginWidget ui_;
+  Ui::TalosWBCGuiWidget ui_;
   QWidget* widget_;
 };
 } // namespace

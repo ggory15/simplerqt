@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>TocabiGuiWidget</class>
- <widget class="QWidget" name="TocabiGuiWidget">
+ <class>TalosWBCGuiWidget</class>
+ <widget class="QWidget" name="TalosWBCGuiWidget">
   <property name="geometry">
    <rect>
     <x>0</x>

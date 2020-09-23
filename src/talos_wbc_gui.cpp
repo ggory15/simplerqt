@@ -54,4 +54,4 @@ void triggerConfiguration()
 }*/
 
 } // namespace
-PLUGINLIB_DECLARE_CLASS(my_namespace, MyPlugin, my_namespace::MyPlugin, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(talos_wbc_gui::MyPlugin, rqt_gui_cpp::Plugin)
