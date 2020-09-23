@@ -5,7 +5,9 @@ from catkin_pkg.python_setup import generate_distutils_setup
 
 d = generate_distutils_setup(
     packages=['talos_wbc_gui'],
-    package_dir={'': 'src'}
+    package_dir={'': 'src'},
+    requires=['std_msgs', 'roscpp'],
+    scripts=['scripts/talos_wbc_gui']
 )
 
 setup(**d)

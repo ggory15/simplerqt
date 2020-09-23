@@ -4,17 +4,17 @@
 
 namespace talos_wbc_gui {
 
-MyPlugin::MyPlugin()
+TalosWBCGui::TalosWBCGui()
   : rqt_gui_cpp::Plugin()
   , widget_(0)
 {
   // Constructor is called first before initPlugin function, needless to say.
 
   // give QObjects reasonable names
-  setObjectName("MyPlugin");
+  setObjectName("TalosWBCGui");
 }
 
-void MyPlugin::initPlugin(qt_gui_cpp::PluginContext& context)
+void TalosWBCGui::initPlugin(qt_gui_cpp::PluginContext& context)
 {
   // access standalone command line arguments
   QStringList argv = context.argv();
@@ -26,18 +26,18 @@ void MyPlugin::initPlugin(qt_gui_cpp::PluginContext& context)
   context.addWidget(widget_);
 }
 
-void MyPlugin::shutdownPlugin()
+void TalosWBCGui::shutdownPlugin()
 {
   // TODO unregister all publishers here
 }
 
-void MyPlugin::saveSettings(qt_gui_cpp::Settings& plugin_settings, qt_gui_cpp::Settings& instance_settings) const
+void TalosWBCGui::saveSettings(qt_gui_cpp::Settings& plugin_settings, qt_gui_cpp::Settings& instance_settings) const
 {
   // TODO save intrinsic configuration, usually using:
   // instance_settings.setValue(k, v)
 }
 
-void MyPlugin::restoreSettings(const qt_gui_cpp::Settings& plugin_settings, const qt_gui_cpp::Settings& instance_settings)
+void TalosWBCGui::restoreSettings(const qt_gui_cpp::Settings& plugin_settings, const qt_gui_cpp::Settings& instance_settings)
 {
   // TODO restore intrinsic configuration, usually using:
   // v = instance_settings.value(k)
@@ -54,4 +54,4 @@ void triggerConfiguration()
 }*/
 
 } // namespace
-PLUGINLIB_EXPORT_CLASS(talos_wbc_gui::MyPlugin, rqt_gui_cpp::Plugin)
+PLUGINLIB_EXPORT_CLASS(talos_wbc_gui::TalosWBCGui, rqt_gui_cpp::Plugin)
