@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
 )
 
+FIND_PACKAGE(Eigen3 REQUIRED) 
 find_package(Qt5Widgets REQUIRED)
 set(CMAKE_AUTOMOC ON)
 catkin_python_setup()

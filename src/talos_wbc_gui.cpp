@@ -54,10 +54,18 @@ TalosWBCGui::TalosWBCGui()
   qRegisterMetaType<std_msgs::Int32MultiArrayConstPtr>();
   qRegisterMetaType<rosgraph_msgs::ClockConstPtr>();
   qRegisterMetaType<sensor_msgs::JointStateConstPtr>();
+  qRegisterMetaType<geometry_msgs::WrenchStampedConstPtr>();
   setObjectName("TalosWBCGui");
 
   timesub = nh_.subscribe("/clock", 1, &TalosWBCGui::TimerCallback, this);
   jointsub = nh_.subscribe("/joint_states", 1, &TalosWBCGui::JointStateCallback, this);
+  
+  forcesubs.push_back(nh_.subscribe("/right_ankle_ft", 1, &TalosWBCGui::ForceSensorCallback, this));
+  forcesubs.push_back(nh_.subscribe("/left_ankle_ft", 1, &TalosWBCGui::ForceSensorCallback, this));
+  forcesubs.push_back(nh_.subscribe("/right_wrist_ft", 1, &TalosWBCGui::ForceSensorCallback, this));
+  forcesubs.push_back(nh_.subscribe("/left_wrist_ft", 1, &TalosWBCGui::ForceSensorCallback, this));
+
+  imusub = nh_.subscribe("/base_imu", 1, &TalosWBCGui::IMUSensorCallback, this);
 }
 
 void TalosWBCGui::initPlugin(qt_gui_cpp::PluginContext& context)
@@ -77,12 +85,23 @@ void TalosWBCGui::initPlugin(qt_gui_cpp::PluginContext& context)
   context.addWidget(widget_);
 
   std::string mode;
-  nh_.param<std::string>("/gui/", mode, "default");
+  nh_.param<std::string>("/gui/", mode, "default"); //TODO bool for simulation or real robot
 
+  connect(ui_.stat_btn, SIGNAL(pressed()), this, SLOT(jstatebtn()));
+  connect(ui_.stat_btn_2, SIGNAL(pressed()), this, SLOT(sstatebtn()));
+
+
+  ui_.stat_btn->setShortcut(QKeySequence(Qt::Key_1));
+  ui_.stat_btn_2->setShortcut(QKeySequence(Qt::Key_2));
+
+  // for page 1
   connect(this, &TalosWBCGui::TimerCallback, this, &TalosWBCGui::timercb);
   connect(this, &TalosWBCGui::JointStateCallback, this, &TalosWBCGui::jointcb);
-
-
+  
+  // for page 2
+  connect(this, &TalosWBCGui::ForceSensorCallback, this, &TalosWBCGui::forcecb);
+  connect(this, &TalosWBCGui::IMUSensorCallback, this, &TalosWBCGui::imucb);
+  
 }
 
 void TalosWBCGui::shutdownPlugin()
@@ -231,6 +250,63 @@ void TalosWBCGui::jointcb(const sensor_msgs::JointStateConstPtr &msg)
 
 }
 
+void TalosWBCGui::forcecb(const geometry_msgs::WrenchStampedConstPtr &msg)
+{
+    if (msg->header.frame_id == "leg_right_6_link"){
+      ui_.RL_f_x->setText(QString::number(msg->wrench.force.x, 'f', 3));
+      ui_.RL_f_y->setText(QString::number(msg->wrench.force.y, 'f', 3));
+      ui_.RL_f_z->setText(QString::number(msg->wrench.force.z, 'f', 3));
+      ui_.RL_t_x->setText(QString::number(msg->wrench.torque.x, 'f', 3));
+      ui_.RL_t_y->setText(QString::number(msg->wrench.torque.y, 'f', 3));
+      ui_.RL_t_z->setText(QString::number(msg->wrench.torque.z, 'f', 3));    
+    }
+    else if (msg->header.frame_id == "leg_left_6_link"){
+      ui_.LL_f_x->setText(QString::number(msg->wrench.force.x, 'f', 3));
+      ui_.LL_f_y->setText(QString::number(msg->wrench.force.y, 'f', 3));
+      ui_.LL_f_z->setText(QString::number(msg->wrench.force.z, 'f', 3));
+      ui_.LL_t_x->setText(QString::number(msg->wrench.torque.x, 'f', 3));
+      ui_.LL_t_y->setText(QString::number(msg->wrench.torque.y, 'f', 3));
+      ui_.LL_t_z->setText(QString::number(msg->wrench.torque.z, 'f', 3));    
+    }
+    else if (msg->header.frame_id == "wrist_left_ft_link"){
+      ui_.LA_f_x->setText(QString::number(msg->wrench.force.x, 'f', 3));
+      ui_.LA_f_y->setText(QString::number(msg->wrench.force.y, 'f', 3));
+      ui_.LA_f_z->setText(QString::number(msg->wrench.force.z, 'f', 3));
+      ui_.LA_t_x->setText(QString::number(msg->wrench.torque.x, 'f', 3));
+      ui_.LA_t_y->setText(QString::number(msg->wrench.torque.y, 'f', 3));
+      ui_.LA_t_z->setText(QString::number(msg->wrench.torque.z, 'f', 3));    
+    }
+    else if (msg->header.frame_id == "wrist_right_ft_link"){
+      ui_.RA_f_x->setText(QString::number(msg->wrench.force.x, 'f', 3));
+      ui_.RA_f_y->setText(QString::number(msg->wrench.force.y, 'f', 3));
+      ui_.RA_f_z->setText(QString::number(msg->wrench.force.z, 'f', 3));
+      ui_.RA_t_x->setText(QString::number(msg->wrench.torque.x, 'f', 3));
+      ui_.RA_t_y->setText(QString::number(msg->wrench.torque.y, 'f', 3));
+      ui_.RA_t_z->setText(QString::number(msg->wrench.torque.z, 'f', 3));    
+    }
+}
+
+void TalosWBCGui::imucb(const sensor_msgs::ImuConstPtr &msg)
+{
+  imu_quat.w() = msg->orientation.w;
+  imu_quat.x() = msg->orientation.x;
+  imu_quat.y() = msg->orientation.y;
+  imu_quat.z() = msg->orientation.z;
+
+  imu_rpy = imu_quat.toRotationMatrix().eulerAngles(0, 1, 2); // roll, pitch, yaw
+  ui_.IMU1->setText(QString::number(imu_rpy(0), 'f', 3));  
+  ui_.IMU2->setText(QString::number(imu_rpy(1), 'f', 3));  
+  ui_.IMU3->setText(QString::number(imu_rpy(2), 'f', 3));     
+}
+
+void TalosWBCGui::jstatebtn()
+{
+    ui_.stackedWidget->setCurrentIndex(0);
+}
+void TalosWBCGui::sstatebtn()
+{
+    ui_.stackedWidget->setCurrentIndex(1);
+}
 
 } // namespace
 PLUGINLIB_EXPORT_CLASS(talos_wbc_gui::TalosWBCGui, rqt_gui_cpp::Plugin)

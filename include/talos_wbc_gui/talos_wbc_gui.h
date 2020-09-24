@@ -21,6 +21,7 @@
 #include <std_msgs/Float32MultiArray.h>
 #include <std_msgs/Int32MultiArray.h>
 #include <geometry_msgs/PolygonStamped.h>
+#include <geometry_msgs/WrenchStamped.h>
 #include <std_msgs/String.h>
 #include <rosgraph_msgs/Clock.h>
 #include <QMetaType>
@@ -31,6 +32,8 @@
 #include <QGraphicsView>
 #include <QStringListModel>
 
+#include <eigen3/Eigen/Core>
+#include <eigen3/Eigen/Geometry>
 
 namespace talos_wbc_gui {
 
@@ -74,18 +77,30 @@ public:
 protected slots:
   virtual void timercb(const rosgraph_msgs::ClockConstPtr &msg);
   virtual void jointcb(const sensor_msgs::JointStateConstPtr &msg);
+  virtual void forcecb(const geometry_msgs::WrenchStampedConstPtr &msg);
+  virtual void imucb(const sensor_msgs::ImuConstPtr &msg);
+
+  virtual void jstatebtn();
+  virtual void sstatebtn();
 
 private:
   ros::Time robot_time;
+  Eigen::Vector3d imu_rpy;
+  Eigen::Quaterniond imu_quat;
   ros::NodeHandle nh_;
 
 public: 
   ros::Subscriber timesub; // for ros time
   ros::Subscriber jointsub; // for joint information
+  std::vector<ros::Subscriber> forcesubs; // for force sensor
+  ros::Subscriber imusub;
+  
 
 signals:
   void TimerCallback(const rosgraph_msgs::ClockConstPtr &msg);
   void JointStateCallback(const sensor_msgs::JointStateConstPtr &msg);
+  void ForceSensorCallback(const geometry_msgs::WrenchStampedConstPtr &msg);
+  void IMUSensorCallback(const sensor_msgs::ImuConstPtr &msg);
 
 private:
   Ui::TalosWBCGuiWidget ui_;
@@ -95,6 +110,7 @@ private:
 
 Q_DECLARE_METATYPE(std_msgs::StringConstPtr);
 Q_DECLARE_METATYPE(geometry_msgs::PolygonStampedConstPtr);
+Q_DECLARE_METATYPE(geometry_msgs::WrenchStampedConstPtr);
 Q_DECLARE_METATYPE(std_msgs::Float32ConstPtr);
 Q_DECLARE_METATYPE(sensor_msgs::ImuConstPtr);
 Q_DECLARE_METATYPE(sensor_msgs::JointStateConstPtr);
