@@ -15,6 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   geometry_msgs
+  nav_msgs
+  tf
 )
 
 FIND_PACKAGE(Eigen3 REQUIRED) 
@@ -26,7 +28,7 @@ roslint_cpp()
 
 catkin_package(
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS roscpp rqt_gui rqt_gui_cpp sensor_msgs std_msgs geometry_msgs 
+  CATKIN_DEPENDS roscpp rqt_gui rqt_gui_cpp sensor_msgs std_msgs geometry_msgs nav_msgs tf
 )
 
 set(talos_wbc_gui_SRCS

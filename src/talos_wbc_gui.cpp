@@ -55,6 +55,7 @@ TalosWBCGui::TalosWBCGui()
   qRegisterMetaType<rosgraph_msgs::ClockConstPtr>();
   qRegisterMetaType<sensor_msgs::JointStateConstPtr>();
   qRegisterMetaType<geometry_msgs::WrenchStampedConstPtr>();
+  qRegisterMetaType<nav_msgs::OdometryConstPtr>();
   setObjectName("TalosWBCGui");
 
   timesub = nh_.subscribe("/clock", 1, &TalosWBCGui::TimerCallback, this);
@@ -65,7 +66,8 @@ TalosWBCGui::TalosWBCGui()
   forcesubs.push_back(nh_.subscribe("/right_wrist_ft", 1, &TalosWBCGui::ForceSensorCallback, this));
   forcesubs.push_back(nh_.subscribe("/left_wrist_ft", 1, &TalosWBCGui::ForceSensorCallback, this));
 
-  imusub = nh_.subscribe("/base_imu", 1, &TalosWBCGui::IMUSensorCallback, this);
+  // imusub = nh_.subscribe("/base_imu", 1, &TalosWBCGui::IMUSensorCallback, this);
+  pelvissub = nh_.subscribe("/floating_base_pose_simulated", 1, &TalosWBCGui::PelvisSensorCallback, this);
 }
 
 void TalosWBCGui::initPlugin(qt_gui_cpp::PluginContext& context)
@@ -100,8 +102,9 @@ void TalosWBCGui::initPlugin(qt_gui_cpp::PluginContext& context)
   
   // for page 2
   connect(this, &TalosWBCGui::ForceSensorCallback, this, &TalosWBCGui::forcecb);
-  connect(this, &TalosWBCGui::IMUSensorCallback, this, &TalosWBCGui::imucb);
-  
+  // connect(this, &TalosWBCGui::IMUSensorCallback, this, &TalosWBCGui::imucb);
+  connect(this, &TalosWBCGui::PelvisSensorCallback, this, &TalosWBCGui::pelviscb);
+  // gettf();
 }
 
 void TalosWBCGui::shutdownPlugin()
@@ -286,18 +289,84 @@ void TalosWBCGui::forcecb(const geometry_msgs::WrenchStampedConstPtr &msg)
     }
 }
 
-void TalosWBCGui::imucb(const sensor_msgs::ImuConstPtr &msg)
-{
-  imu_quat.w() = msg->orientation.w;
-  imu_quat.x() = msg->orientation.x;
-  imu_quat.y() = msg->orientation.y;
-  imu_quat.z() = msg->orientation.z;
+// void TalosWBCGui::imucb(const sensor_msgs::ImuConstPtr &msg)
+// {
+//   imu_quat.w() = msg->orientation.w;
+//   imu_quat.x() = msg->orientation.x;
+//   imu_quat.y() = msg->orientation.y;
+//   imu_quat.z() = msg->orientation.z;
 
-  imu_rpy = imu_quat.toRotationMatrix().eulerAngles(0, 1, 2); // roll, pitch, yaw
-  ui_.IMU1->setText(QString::number(imu_rpy(0), 'f', 3));  
-  ui_.IMU2->setText(QString::number(imu_rpy(1), 'f', 3));  
-  ui_.IMU3->setText(QString::number(imu_rpy(2), 'f', 3));     
+//   imu_rpy = imu_quat.toRotationMatrix().eulerAngles(0, 1, 2); // roll, pitch, yaw
+//   ui_.pel_ori_0->setText(QString::number(imu_rpy(0), 'f', 3));  
+//   ui_.pel_ori_1->setText(QString::number(imu_rpy(1), 'f', 3));  
+//   ui_.pel_ori_2->setText(QString::number(imu_rpy(2), 'f', 3));     
+//   ui_.LL_pos_x->setText(QString::number(0, 'f', 3)); 
+// }
+
+void TalosWBCGui::pelviscb(const nav_msgs::OdometryConstPtr &msg)
+{
+  // for Pelvis
+  tf::Transform base_tf(tf::Quaternion(msg->pose.pose.orientation.x, msg->pose.pose.orientation.y, msg->pose.pose.orientation.z, msg->pose.pose.orientation.w),
+                        tf::Vector3(msg->pose.pose.position.x, msg->pose.pose.position.y, msg->pose.pose.position.z));
+
+  tfScalar yaw, pitch, roll;
+ 
+  ui_.pel_pos_x->setText(QString::number(base_tf.getOrigin().x(), 'f', 3));
+  ui_.pel_pos_y->setText(QString::number(base_tf.getOrigin().y(), 'f', 3));
+  ui_.pel_pos_z->setText(QString::number(base_tf.getOrigin().z(), 'f', 3));
+  base_tf.getBasis().getEulerYPR(yaw, pitch, roll);
+  ui_.pel_ori_x->setText(QString::number(roll, 'f', 3));
+  ui_.pel_ori_y->setText(QString::number(pitch, 'f', 3));
+  ui_.pel_ori_z->setText(QString::number(yaw, 'f', 3));
+
+  // for left leg
+  tf::StampedTransform ee_tf_local;
+  tf::Transform ee_tf;
+  tf_listener.waitForTransform("/base_link","/left_sole_link", ros::Time(), ros::Duration(5.0));
+  tf_listener.lookupTransform("/left_sole_link", "/base_link", ros::Time(0), ee_tf_local);
+  ee_tf = base_tf * ee_tf_local.inverse();
+  ui_.LL_pos_x->setText(QString::number(ee_tf.getOrigin().x(), 'f', 3)); 
+  ui_.LL_pos_y->setText(QString::number(ee_tf.getOrigin().y(), 'f', 3)); 
+  ui_.LL_pos_z->setText(QString::number(ee_tf.getOrigin().z(), 'f', 3)); 
+  ee_tf.getBasis().getEulerYPR(yaw, pitch, roll);
+  ui_.LL_ori_x->setText(QString::number(roll, 'f', 3)); 
+  ui_.LL_ori_y->setText(QString::number(pitch, 'f', 3)); 
+  ui_.LL_ori_z->setText(QString::number(yaw, 'f', 3)); 
+
+  // for right leg
+  tf_listener.lookupTransform("/right_sole_link", "/base_link", ros::Time(0), ee_tf_local);
+  ee_tf = base_tf * ee_tf_local.inverse();
+  ui_.RL_pos_x->setText(QString::number(ee_tf.getOrigin().x(), 'f', 3)); 
+  ui_.RL_pos_y->setText(QString::number(ee_tf.getOrigin().y(), 'f', 3)); 
+  ui_.RL_pos_z->setText(QString::number(ee_tf.getOrigin().z(), 'f', 3)); 
+  ee_tf.getBasis().getEulerYPR(yaw, pitch, roll);
+  ui_.RL_ori_x->setText(QString::number(roll, 'f', 3)); 
+  ui_.RL_ori_y->setText(QString::number(pitch, 'f', 3)); 
+  ui_.RL_ori_z->setText(QString::number(yaw, 'f', 3)); 
+
+  // for right arm
+  tf_listener.lookupTransform("/gripper_right_base_link", "/base_link", ros::Time(0), ee_tf_local);
+  ee_tf = base_tf * ee_tf_local.inverse();
+  ui_.RA_pos_x->setText(QString::number(ee_tf.getOrigin().x(), 'f', 3)); 
+  ui_.RA_pos_y->setText(QString::number(ee_tf.getOrigin().y(), 'f', 3)); 
+  ui_.RA_pos_z->setText(QString::number(ee_tf.getOrigin().z(), 'f', 3)); 
+  ee_tf.getBasis().getEulerYPR(yaw, pitch, roll);
+  ui_.RA_ori_x->setText(QString::number(roll, 'f', 3)); 
+  ui_.RA_ori_y->setText(QString::number(pitch, 'f', 3)); 
+  ui_.RA_ori_z->setText(QString::number(yaw, 'f', 3)); 
+
+  // for left arm
+  tf_listener.lookupTransform("/gripper_left_base_link", "/base_link", ros::Time(0), ee_tf_local);
+  ee_tf = base_tf * ee_tf_local.inverse();
+  ui_.LA_pos_x->setText(QString::number(ee_tf.getOrigin().x(), 'f', 3)); 
+  ui_.LA_pos_y->setText(QString::number(ee_tf.getOrigin().y(), 'f', 3)); 
+  ui_.LA_pos_z->setText(QString::number(ee_tf.getOrigin().z(), 'f', 3)); 
+  ee_tf.getBasis().getEulerYPR(yaw, pitch, roll);
+  ui_.LA_ori_x->setText(QString::number(roll, 'f', 3)); 
+  ui_.LA_ori_y->setText(QString::number(pitch, 'f', 3)); 
+  ui_.LA_ori_z->setText(QString::number(yaw, 'f', 3)); 
 }
+
 
 void TalosWBCGui::jstatebtn()
 {

@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
+    <width>1314</width>
+    <height>989</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
     <width>1301</width>
     <height>831</height>
-   </rect>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Talos WBC GUI</string>
@@ -22,9 +28,19 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QLabel" name="label_11">
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Talos Time :</string>
       </property>
@@ -32,6 +48,11 @@
     </item>
     <item>
      <widget class="QLabel" name="currenttime">
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
@@ -51,6 +72,11 @@
      <height>61</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>JOINT STATE</string>
    </property>
@@ -64,6 +90,11 @@
      <height>61</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>SENSOR
 STATE</string>
@@ -72,24 +103,34 @@ STATE</string>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>80</y>
-     <width>1281</width>
-     <height>741</height>
+     <width>1301</width>
+     <height>851</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="JSTATE">
     <widget class="QFrame" name="frame_2">
      <property name="geometry">
       <rect>
-       <x>430</x>
+       <x>436</x>
        <y>20</y>
        <width>421</width>
-       <height>711</height>
+       <height>831</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -103,8 +144,13 @@ STATE</string>
         <x>10</x>
         <y>20</y>
         <width>401</width>
-        <height>681</height>
+        <height>801</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -117,14 +163,13 @@ STATE</string>
         <rect>
          <x>120</x>
          <y>40</y>
-         <width>60</width>
+         <width>71</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -137,15 +182,15 @@ STATE</string>
       <widget class="QLabel" name="label_94">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>310</x>
          <y>40</y>
-         <width>52</width>
-         <height>19</height>
+         <width>71</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -166,8 +211,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -182,14 +226,13 @@ STATE</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>131</width>
+         <width>151</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -205,8 +248,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>281</height>
+         <height>335</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_5">
         <item>
@@ -215,8 +263,7 @@ STATE</string>
            <widget class="QLabel" name="label_97">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -231,8 +278,7 @@ STATE</string>
            <widget class="QLabel" name="label_98">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -247,8 +293,7 @@ STATE</string>
            <widget class="QLabel" name="label_99">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -263,8 +308,7 @@ STATE</string>
            <widget class="QLabel" name="label_100">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -279,8 +323,7 @@ STATE</string>
            <widget class="QLabel" name="label_101">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -295,8 +338,7 @@ STATE</string>
            <widget class="QLabel" name="label_102">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -311,8 +353,7 @@ STATE</string>
            <widget class="QLabel" name="label_140">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -329,6 +370,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_13">
           <item>
            <widget class="QLabel" name="LA_p_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -342,6 +388,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_p_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -355,6 +406,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_p_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -368,6 +424,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_p_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -384,6 +445,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -394,6 +460,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_p_6">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -404,6 +475,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_p_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -418,6 +494,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_14">
           <item>
            <widget class="QLabel" name="LA_v_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -431,6 +512,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_v_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -444,6 +530,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_v_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -457,6 +548,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_v_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -473,6 +569,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -483,6 +584,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_v_6">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -493,6 +599,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_v_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -507,6 +618,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_15">
           <item>
            <widget class="QLabel" name="LA_t_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -520,6 +636,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_t_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -533,6 +654,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_t_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -546,6 +672,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_t_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -562,6 +693,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -572,6 +708,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_t_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -582,6 +723,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_t_6">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -598,10 +744,15 @@ STATE</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>390</y>
+         <y>460</y>
          <width>381</width>
-         <height>281</height>
+         <height>335</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
@@ -610,8 +761,7 @@ STATE</string>
            <widget class="QLabel" name="label_103">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -626,8 +776,7 @@ STATE</string>
            <widget class="QLabel" name="label_104">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -642,8 +791,7 @@ STATE</string>
            <widget class="QLabel" name="label_133">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -658,8 +806,7 @@ STATE</string>
            <widget class="QLabel" name="label_134">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -674,8 +821,7 @@ STATE</string>
            <widget class="QLabel" name="label_135">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -690,8 +836,7 @@ STATE</string>
            <widget class="QLabel" name="label_136">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -706,8 +851,7 @@ STATE</string>
            <widget class="QLabel" name="label_141">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -724,6 +868,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_20">
           <item>
            <widget class="QLabel" name="RA_p_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -737,6 +886,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_p_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -750,6 +904,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_p_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -763,6 +922,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_p_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -779,6 +943,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -789,6 +958,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_p_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -799,6 +973,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_p_6">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -813,6 +992,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_22">
           <item>
            <widget class="QLabel" name="RA_v_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -826,6 +1010,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_v_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -839,6 +1028,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_v_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -852,6 +1046,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_v_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -868,6 +1067,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -878,6 +1082,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_v_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -888,6 +1097,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_v_6">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -902,6 +1116,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_23">
           <item>
            <widget class="QLabel" name="RA_t_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -915,6 +1134,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_t_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -928,6 +1152,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_t_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -941,6 +1170,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_t_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -957,6 +1191,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -967,6 +1206,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_t_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -977,6 +1221,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_t_6">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -993,14 +1242,14 @@ STATE</string>
        <property name="geometry">
         <rect>
          <x>320</x>
-         <y>370</y>
-         <width>52</width>
+         <y>430</y>
+         <width>61</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1013,16 +1262,15 @@ STATE</string>
       <widget class="QLabel" name="label_138">
        <property name="geometry">
         <rect>
-         <x>120</x>
-         <y>370</y>
-         <width>60</width>
+         <x>130</x>
+         <y>430</y>
+         <width>71</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1035,16 +1283,15 @@ STATE</string>
       <widget class="QLabel" name="label_137">
        <property name="geometry">
         <rect>
-         <x>215</x>
-         <y>370</y>
+         <x>225</x>
+         <y>430</y>
          <width>71</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1059,11 +1306,16 @@ STATE</string>
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>6</x>
        <y>20</y>
        <width>421</width>
-       <height>711</height>
+       <height>831</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -1077,8 +1329,13 @@ STATE</string>
         <x>10</x>
         <y>20</y>
         <width>401</width>
-        <height>591</height>
+        <height>741</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -1089,16 +1346,15 @@ STATE</string>
       <widget class="QLabel" name="label_73">
        <property name="geometry">
         <rect>
-         <x>120</x>
+         <x>110</x>
          <y>40</y>
-         <width>60</width>
+         <width>81</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1111,15 +1367,15 @@ STATE</string>
       <widget class="QLabel" name="label_74">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>310</x>
          <y>40</y>
-         <width>52</width>
-         <height>19</height>
+         <width>61</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1140,8 +1396,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1162,8 +1417,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1179,8 +1433,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>241</height>
+         <height>286</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
@@ -1189,8 +1448,7 @@ STATE</string>
            <widget class="QLabel" name="label_75">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1205,8 +1463,7 @@ STATE</string>
            <widget class="QLabel" name="label_76">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1221,8 +1478,7 @@ STATE</string>
            <widget class="QLabel" name="label_77">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1237,8 +1493,7 @@ STATE</string>
            <widget class="QLabel" name="label_78">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1253,8 +1508,7 @@ STATE</string>
            <widget class="QLabel" name="label_79">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1269,8 +1523,7 @@ STATE</string>
            <widget class="QLabel" name="label_80">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1287,6 +1540,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_6">
           <item>
            <widget class="QLabel" name="LL_p_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1300,6 +1558,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_p_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1313,6 +1576,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_p_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1326,6 +1594,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_p_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1342,6 +1615,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1352,6 +1630,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_p_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1366,6 +1649,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
            <widget class="QLabel" name="LL_v_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1379,6 +1667,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_v_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1392,6 +1685,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_v_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1405,6 +1703,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_v_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1421,6 +1724,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1431,6 +1739,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_v_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1445,6 +1758,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
            <widget class="QLabel" name="LL_t_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1458,6 +1776,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_t_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1471,6 +1794,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_t_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1484,6 +1812,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_t_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1500,6 +1833,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1510,6 +1848,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_t_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1525,16 +1868,15 @@ STATE</string>
       <widget class="QLabel" name="label_81">
        <property name="geometry">
         <rect>
-         <x>120</x>
+         <x>130</x>
          <y>370</y>
-         <width>60</width>
+         <width>71</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1550,8 +1892,13 @@ STATE</string>
          <x>10</x>
          <y>390</y>
          <width>381</width>
-         <height>241</height>
+         <height>286</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
@@ -1560,8 +1907,7 @@ STATE</string>
            <widget class="QLabel" name="label_82">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1576,8 +1922,7 @@ STATE</string>
            <widget class="QLabel" name="label_83">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1592,8 +1937,7 @@ STATE</string>
            <widget class="QLabel" name="label_84">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1608,8 +1952,7 @@ STATE</string>
            <widget class="QLabel" name="label_85">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1624,8 +1967,7 @@ STATE</string>
            <widget class="QLabel" name="label_87">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1640,8 +1982,7 @@ STATE</string>
            <widget class="QLabel" name="label_88">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1658,6 +1999,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_9">
           <item>
            <widget class="QLabel" name="RL_p_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1671,6 +2017,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_p_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1684,6 +2035,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_p_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1697,6 +2053,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_p_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1713,6 +2074,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1723,6 +2089,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_p_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1737,6 +2108,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_10">
           <item>
            <widget class="QLabel" name="RL_v_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1750,6 +2126,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_v_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1763,6 +2144,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_v_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1776,6 +2162,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_v_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1792,6 +2183,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1802,6 +2198,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_v_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1816,6 +2217,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_11">
           <item>
            <widget class="QLabel" name="RL_t_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1829,6 +2235,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_t_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1842,6 +2253,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_t_2">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1855,6 +2271,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_t_3">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1871,6 +2292,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1881,6 +2307,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_t_5">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1904,8 +2335,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1920,13 +2350,13 @@ STATE</string>
         <rect>
          <x>320</x>
          <y>370</y>
-         <width>52</width>
-         <height>19</height>
+         <width>61</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -1941,11 +2371,16 @@ STATE</string>
     <widget class="QFrame" name="frame_3">
      <property name="geometry">
       <rect>
-       <x>860</x>
+       <x>866</x>
        <y>20</y>
        <width>421</width>
-       <height>711</height>
+       <height>831</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -1961,6 +2396,11 @@ STATE</string>
         <width>401</width>
         <height>151</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -1979,8 +2419,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2001,7 +2440,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2022,8 +2461,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2044,8 +2482,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2061,8 +2498,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>81</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_9">
         <item>
@@ -2071,8 +2513,7 @@ STATE</string>
            <widget class="QLabel" name="label_156">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -2087,8 +2528,7 @@ STATE</string>
            <widget class="QLabel" name="label_157">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -2105,6 +2545,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_33">
           <item>
            <widget class="QLabel" name="H_p_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2118,6 +2563,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="H_p_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2135,6 +2585,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_34">
           <item>
            <widget class="QLabel" name="H_v_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2148,6 +2603,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="H_v_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2165,6 +2625,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_35">
           <item>
            <widget class="QLabel" name="H_t_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2178,6 +2643,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="H_t_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2200,8 +2670,13 @@ STATE</string>
         <x>7</x>
         <y>270</y>
         <width>401</width>
-        <height>141</height>
+        <height>211</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -2212,16 +2687,15 @@ STATE</string>
       <widget class="QLabel" name="label_158">
        <property name="geometry">
         <rect>
-         <x>120</x>
+         <x>110</x>
          <y>40</y>
-         <width>60</width>
+         <width>71</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2234,15 +2708,15 @@ STATE</string>
       <widget class="QLabel" name="label_159">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>311</x>
          <y>40</y>
-         <width>52</width>
-         <height>19</height>
+         <width>61</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2263,8 +2737,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2285,8 +2758,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2302,8 +2774,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>71</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_10">
         <item>
@@ -2312,8 +2789,7 @@ STATE</string>
            <widget class="QLabel" name="label_162">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -2328,8 +2804,7 @@ STATE</string>
            <widget class="QLabel" name="label_163">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -2346,6 +2821,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_37">
           <item>
            <widget class="QLabel" name="T_p_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2359,6 +2839,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="T_p_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2376,6 +2861,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_38">
           <item>
            <widget class="QLabel" name="T_v_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2389,6 +2879,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="T_v_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2406,6 +2901,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_39">
           <item>
            <widget class="QLabel" name="T_t_0">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2419,6 +2919,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="T_t_1">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2439,10 +2944,15 @@ STATE</string>
       <property name="geometry">
        <rect>
         <x>7</x>
-        <y>500</y>
+        <y>540</y>
         <width>401</width>
-        <height>141</height>
+        <height>251</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -2455,14 +2965,13 @@ STATE</string>
         <rect>
          <x>120</x>
          <y>40</y>
-         <width>60</width>
+         <width>71</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2475,15 +2984,15 @@ STATE</string>
       <widget class="QLabel" name="label_165">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>310</x>
          <y>40</y>
-         <width>52</width>
-         <height>19</height>
+         <width>71</width>
+         <height>20</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2504,8 +3013,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2526,8 +3034,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
-         <italic>false</italic>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2543,8 +3050,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>71</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_11">
         <item>
@@ -2553,8 +3065,7 @@ STATE</string>
            <widget class="QLabel" name="label_168">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -2569,8 +3080,7 @@ STATE</string>
            <widget class="QLabel" name="label_169">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
-              <italic>false</italic>
+              <pointsize>7</pointsize>
              </font>
             </property>
             <property name="text">
@@ -2587,6 +3097,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_41">
           <item>
            <widget class="QLabel" name="LG_p">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2600,6 +3115,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RG_p">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2617,6 +3137,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_42">
           <item>
            <widget class="QLabel" name="p0_27">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2630,6 +3155,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="p1_21">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2647,6 +3177,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_43">
           <item>
            <widget class="QLabel" name="p0_28">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2660,6 +3195,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="p2_18">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2682,11 +3222,16 @@ STATE</string>
     <widget class="QFrame" name="frame_4">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>6</x>
        <y>10</y>
        <width>421</width>
        <height>331</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -2702,6 +3247,11 @@ STATE</string>
         <width>401</width>
         <height>291</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -2720,7 +3270,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -2742,7 +3292,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -2763,7 +3313,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -2785,7 +3335,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -2802,8 +3352,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>71</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
@@ -2812,7 +3367,7 @@ STATE</string>
            <widget class="QLabel" name="label_108">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -2828,7 +3383,7 @@ STATE</string>
            <widget class="QLabel" name="label_109">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -2846,6 +3401,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_16">
           <item>
            <widget class="QLabel" name="LL_f_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2859,6 +3419,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LL_t_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2876,6 +3441,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_17">
           <item>
            <widget class="QLabel" name="LL_f_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2895,6 +3465,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2909,6 +3484,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_18">
           <item>
            <widget class="QLabel" name="LL_f_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2928,6 +3508,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -2944,14 +3529,14 @@ STATE</string>
        <property name="geometry">
         <rect>
          <x>-10</x>
-         <y>150</y>
+         <y>160</y>
          <width>211</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -2968,8 +3553,13 @@ STATE</string>
          <x>10</x>
          <y>200</y>
          <width>381</width>
-         <height>71</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_7">
         <item>
@@ -2978,7 +3568,7 @@ STATE</string>
            <widget class="QLabel" name="label_110">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -2994,7 +3584,7 @@ STATE</string>
            <widget class="QLabel" name="label_111">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -3012,6 +3602,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_21">
           <item>
            <widget class="QLabel" name="RL_f_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3025,6 +3620,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RL_t_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3042,6 +3642,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_24">
           <item>
            <widget class="QLabel" name="RL_f_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3061,6 +3666,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3075,6 +3685,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_25">
           <item>
            <widget class="QLabel" name="RL_f_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3093,6 +3708,11 @@ STATE</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -3117,7 +3737,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3139,7 +3759,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3161,7 +3781,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -3176,11 +3796,16 @@ STATE</string>
     <widget class="QFrame" name="frame_5">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>6</x>
        <y>370</y>
        <width>421</width>
        <height>331</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -3196,6 +3821,11 @@ STATE</string>
         <width>401</width>
         <height>291</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -3214,7 +3844,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3236,7 +3866,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -3257,7 +3887,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3279,7 +3909,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3296,8 +3926,13 @@ STATE</string>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>71</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_13">
         <item>
@@ -3306,7 +3941,7 @@ STATE</string>
            <widget class="QLabel" name="label_132">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -3322,7 +3957,7 @@ STATE</string>
            <widget class="QLabel" name="label_142">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -3340,6 +3975,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_46">
           <item>
            <widget class="QLabel" name="LA_f_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3353,6 +3993,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="LA_t_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3370,6 +4015,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_47">
           <item>
            <widget class="QLabel" name="LA_f_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3389,6 +4039,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3403,6 +4058,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_48">
           <item>
            <widget class="QLabel" name="LA_f_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3422,6 +4082,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3438,14 +4103,14 @@ STATE</string>
        <property name="geometry">
         <rect>
          <x>-10</x>
-         <y>150</y>
+         <y>160</y>
          <width>221</width>
          <height>19</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3462,8 +4127,13 @@ STATE</string>
          <x>10</x>
          <y>200</y>
          <width>381</width>
-         <height>71</height>
+         <height>90</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_14">
         <item>
@@ -3472,7 +4142,7 @@ STATE</string>
            <widget class="QLabel" name="label_144">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -3488,7 +4158,7 @@ STATE</string>
            <widget class="QLabel" name="label_145">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
@@ -3506,6 +4176,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_50">
           <item>
            <widget class="QLabel" name="RA_f_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3519,6 +4194,11 @@ STATE</string>
           </item>
           <item>
            <widget class="QLabel" name="RA_t_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3536,6 +4216,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_51">
           <item>
            <widget class="QLabel" name="RA_f_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3555,6 +4240,11 @@ STATE</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3569,6 +4259,11 @@ STATE</string>
          <layout class="QVBoxLayout" name="verticalLayout_52">
           <item>
            <widget class="QLabel" name="RA_f_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3587,6 +4282,11 @@ STATE</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -3611,7 +4311,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3633,7 +4333,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -3655,7 +4355,7 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
@@ -3670,11 +4370,16 @@ STATE</string>
     <widget class="QFrame" name="frame_7">
      <property name="geometry">
       <rect>
-       <x>450</x>
+       <x>436</x>
        <y>10</y>
        <width>421</width>
-       <height>141</height>
+       <height>221</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -3682,14 +4387,19 @@ STATE</string>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QFrame" name="frame_16">
+     <widget class="QFrame" name="frame_24">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>20</y>
         <width>401</width>
-        <height>291</height>
+        <height>191</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -3697,7 +4407,7 @@ STATE</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLabel" name="label_149">
+      <widget class="QLabel" name="label_185">
        <property name="geometry">
         <rect>
          <x>120</x>
@@ -3708,18 +4418,18 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
        <property name="text">
-        <string>Roll</string>
+        <string>x</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLabel" name="label_150">
+      <widget class="QLabel" name="label_186">
        <property name="geometry">
         <rect>
          <x>320</x>
@@ -3730,17 +4440,17 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
         </font>
        </property>
        <property name="text">
-        <string>Yaw</string>
+        <string>z</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLabel" name="label_151">
+      <widget class="QLabel" name="label_187">
        <property name="geometry">
         <rect>
          <x>210</x>
@@ -3751,21 +4461,21 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>12</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
        <property name="text">
-        <string>Pitch</string>
+        <string>y</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLabel" name="label_170">
+      <widget class="QLabel" name="label_188">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>-40</x>
          <y>10</y>
          <width>171</width>
          <height>19</height>
@@ -3773,39 +4483,44 @@ STATE</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>13</pointsize>
+         <pointsize>7</pointsize>
          <italic>false</italic>
         </font>
        </property>
        <property name="text">
-        <string>Pelvis Orientation</string>
+        <string>Pelvis</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QWidget" name="horizontalLayoutWidget_14">
+      <widget class="QWidget" name="horizontalLayoutWidget_36">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>60</y>
          <width>381</width>
-         <height>31</height>
+         <height>41</height>
         </rect>
        </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_15">
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_39">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_53">
+         <layout class="QVBoxLayout" name="verticalLayout_157">
           <item>
-           <widget class="QLabel" name="label_171">
+           <widget class="QLabel" name="label_278">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <pointsize>7</pointsize>
               <italic>false</italic>
              </font>
             </property>
             <property name="text">
-             <string>IMU</string>
+             <string>pos</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -3815,9 +4530,14 @@ STATE</string>
          </layout>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_54">
+         <layout class="QVBoxLayout" name="verticalLayout_158">
           <item>
-           <widget class="QLabel" name="IMU1">
+           <widget class="QLabel" name="pel_pos_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3832,9 +4552,14 @@ STATE</string>
          </layout>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_55">
+         <layout class="QVBoxLayout" name="verticalLayout_159">
           <item>
-           <widget class="QLabel" name="IMU2">
+           <widget class="QLabel" name="pel_pos_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3849,9 +4574,14 @@ STATE</string>
          </layout>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_56">
+         <layout class="QVBoxLayout" name="verticalLayout_160">
           <item>
-           <widget class="QLabel" name="IMU3">
+           <widget class="QLabel" name="pel_pos_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -3867,16 +4597,189 @@ STATE</string>
         </item>
        </layout>
       </widget>
+      <widget class="QLabel" name="label_259">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>120</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Yaw</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_32">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_35">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_141">
+          <item>
+           <widget class="QLabel" name="label_262">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>ori</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_142">
+          <item>
+           <widget class="QLabel" name="pel_ori_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_143">
+          <item>
+           <widget class="QLabel" name="pel_ori_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_144">
+          <item>
+           <widget class="QLabel" name="pel_ori_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_258">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Roll</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_260">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>120</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pitch</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QFrame" name="frame_8">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>370</y>
+       <x>436</x>
+       <y>244</y>
        <width>421</width>
-       <height>331</height>
+       <height>221</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -3884,6 +4787,1985 @@ STATE</string>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
+     <widget class="QFrame" name="frame_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_189">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_190">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>40</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>z</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_191">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_192">
+       <property name="geometry">
+        <rect>
+         <x>-40</x>
+         <y>10</y>
+         <width>171</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Left Leg</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_37">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_40">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_161">
+          <item>
+           <widget class="QLabel" name="label_279">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>pos</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_162">
+          <item>
+           <widget class="QLabel" name="LL_pos_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_163">
+          <item>
+           <widget class="QLabel" name="LL_pos_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_164">
+          <item>
+           <widget class="QLabel" name="LL_pos_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_261">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>120</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Yaw</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_33">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_36">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_145">
+          <item>
+           <widget class="QLabel" name="label_263">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>ori</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_146">
+          <item>
+           <widget class="QLabel" name="LL_ori_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_147">
+          <item>
+           <widget class="QLabel" name="LL_ori_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_148">
+          <item>
+           <widget class="QLabel" name="LL_ori_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_264">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Roll</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_265">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>120</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pitch</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_34">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>236</y>
+        <width>421</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_35">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>401</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_217">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>40</y>
+          <width>60</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>x</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_218">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>40</y>
+          <width>52</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>z</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_219">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>71</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>y</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_220">
+        <property name="geometry">
+         <rect>
+          <x>-40</x>
+          <y>10</y>
+          <width>171</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>Right Leg</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_48">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>381</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_51">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_205">
+           <item>
+            <widget class="QLabel" name="label_326">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+               <italic>false</italic>
+              </font>
+             </property>
+             <property name="text">
+              <string>pos</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_206">
+           <item>
+            <widget class="QLabel" name="IMU1_34">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_207">
+           <item>
+            <widget class="QLabel" name="IMU2_34">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_208">
+           <item>
+            <widget class="QLabel" name="IMU3_34">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_327">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>120</y>
+          <width>52</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Yaw</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_49">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>381</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_52">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_209">
+           <item>
+            <widget class="QLabel" name="label_328">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+               <italic>false</italic>
+              </font>
+             </property>
+             <property name="text">
+              <string>ori</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_210">
+           <item>
+            <widget class="QLabel" name="IMU1_35">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_211">
+           <item>
+            <widget class="QLabel" name="IMU2_35">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_212">
+           <item>
+            <widget class="QLabel" name="IMU3_35">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_329">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>120</y>
+          <width>60</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>Roll</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_330">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>120</y>
+          <width>71</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string>Pitch</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_26">
+     <property name="geometry">
+      <rect>
+       <x>436</x>
+       <y>480</y>
+       <width>421</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_193">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_194">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>40</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>z</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_195">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_196">
+       <property name="geometry">
+        <rect>
+         <x>-40</x>
+         <y>10</y>
+         <width>171</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Right Leg</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_38">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_41">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_165">
+          <item>
+           <widget class="QLabel" name="label_280">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>pos</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_166">
+          <item>
+           <widget class="QLabel" name="RL_pos_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_167">
+          <item>
+           <widget class="QLabel" name="RL_pos_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_168">
+          <item>
+           <widget class="QLabel" name="RL_pos_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_266">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>120</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Yaw</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_34">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_37">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_149">
+          <item>
+           <widget class="QLabel" name="label_267">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>ori</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_150">
+          <item>
+           <widget class="QLabel" name="RL_ori_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_151">
+          <item>
+           <widget class="QLabel" name="RL_ori_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_152">
+          <item>
+           <widget class="QLabel" name="RL_ori_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_268">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Roll</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_269">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>120</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pitch</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_36">
+     <property name="geometry">
+      <rect>
+       <x>870</x>
+       <y>244</y>
+       <width>421</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_37">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_221">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_222">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>40</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>z</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_223">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_224">
+       <property name="geometry">
+        <rect>
+         <x>-40</x>
+         <y>10</y>
+         <width>171</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Left Arm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_50">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_53">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_213">
+          <item>
+           <widget class="QLabel" name="label_331">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>pos</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_214">
+          <item>
+           <widget class="QLabel" name="LA_pos_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_215">
+          <item>
+           <widget class="QLabel" name="LA_pos_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_216">
+          <item>
+           <widget class="QLabel" name="LA_pos_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_332">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>120</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Yaw</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_51">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_54">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_217">
+          <item>
+           <widget class="QLabel" name="label_333">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>ori</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_218">
+          <item>
+           <widget class="QLabel" name="LA_ori_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_219">
+          <item>
+           <widget class="QLabel" name="LA_ori_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_220">
+          <item>
+           <widget class="QLabel" name="LA_ori_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_334">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Roll</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_335">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>120</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pitch</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_38">
+     <property name="geometry">
+      <rect>
+       <x>870</x>
+       <y>480</y>
+       <width>421</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_39">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>401</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_225">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>40</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>x</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_226">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>40</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>z</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_227">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>y</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_228">
+       <property name="geometry">
+        <rect>
+         <x>-40</x>
+         <y>10</y>
+         <width>171</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Right Arm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_52">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_55">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_221">
+          <item>
+           <widget class="QLabel" name="label_336">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>pos</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_222">
+          <item>
+           <widget class="QLabel" name="RA_pos_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_223">
+          <item>
+           <widget class="QLabel" name="RA_pos_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_224">
+          <item>
+           <widget class="QLabel" name="RA_pos_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_337">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>120</y>
+         <width>52</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Yaw</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_53">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>381</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_56">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_225">
+          <item>
+           <widget class="QLabel" name="label_338">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>ori</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_226">
+          <item>
+           <widget class="QLabel" name="RA_ori_x">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_227">
+          <item>
+           <widget class="QLabel" name="RA_ori_y">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_228">
+          <item>
+           <widget class="QLabel" name="RA_ori_z">
+            <property name="font">
+             <font>
+              <pointsize>7</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_339">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>120</y>
+         <width>60</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Roll</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_340">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>120</y>
+         <width>71</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Pitch</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </widget>
    <widget class="QWidget" name="DCM">
@@ -3923,7 +6805,7 @@ STATE</string>
          <x>50</x>
          <y>30</y>
          <width>91</width>
-         <height>77</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_26">
@@ -3967,8 +6849,8 @@ STATE</string>
         <rect>
          <x>10</x>
          <y>30</y>
-         <width>31</width>
-         <height>74</height>
+         <width>41</width>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -4030,7 +6912,7 @@ STATE</string>
          <x>50</x>
          <y>30</y>
          <width>91</width>
-         <height>71</height>
+         <height>80</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_28">
@@ -4059,7 +6941,7 @@ STATE</string>
          <x>10</x>
          <y>30</y>
          <width>31</width>
-         <height>71</height>
+         <height>82</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_29">
@@ -4114,7 +6996,7 @@ STATE</string>
          <x>50</x>
          <y>40</y>
          <width>91</width>
-         <height>91</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_63">
@@ -4159,7 +7041,7 @@ STATE</string>
          <x>10</x>
          <y>40</y>
          <width>31</width>
-         <height>91</height>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_64">
@@ -4221,7 +7103,7 @@ STATE</string>
          <x>50</x>
          <y>40</y>
          <width>91</width>
-         <height>91</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_61">
@@ -4265,8 +7147,8 @@ STATE</string>
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>44</width>
-         <height>91</height>
+         <width>82</width>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_62">
@@ -4328,7 +7210,7 @@ STATE</string>
          <x>50</x>
          <y>40</y>
          <width>91</width>
-         <height>91</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_109">
@@ -4373,7 +7255,7 @@ STATE</string>
          <x>10</x>
          <y>40</y>
          <width>31</width>
-         <height>91</height>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_110">
@@ -4435,7 +7317,7 @@ STATE</string>
          <x>50</x>
          <y>40</y>
          <width>91</width>
-         <height>91</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_107">
@@ -4480,7 +7362,7 @@ STATE</string>
          <x>10</x>
          <y>40</y>
          <width>31</width>
-         <height>91</height>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_108">
@@ -4542,7 +7424,7 @@ STATE</string>
          <x>50</x>
          <y>40</y>
          <width>91</width>
-         <height>91</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_111">
@@ -4586,8 +7468,8 @@ STATE</string>
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>31</width>
-         <height>91</height>
+         <width>33</width>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_112">
@@ -4649,7 +7531,7 @@ STATE</string>
          <x>50</x>
          <y>40</y>
          <width>91</width>
-         <height>91</height>
+         <height>131</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_113">
@@ -4693,8 +7575,8 @@ STATE</string>
         <rect>
          <x>10</x>
          <y>40</y>
-         <width>31</width>
-         <height>91</height>
+         <width>33</width>
+         <height>128</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_114">
@@ -4746,7 +7628,7 @@ STATE</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>13</pointsize>
+        <pointsize>7</pointsize>
         <italic>false</italic>
        </font>
       </property>
@@ -4806,8 +7688,8 @@ STATE</string>
         <rect>
          <x>10</x>
          <y>50</y>
-         <width>251</width>
-         <height>311</height>
+         <width>390</width>
+         <height>318</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -5188,8 +8070,8 @@ STATE</string>
         <rect>
          <x>280</x>
          <y>50</y>
-         <width>160</width>
-         <height>311</height>
+         <width>251</width>
+         <height>316</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_17">
@@ -5451,8 +8333,8 @@ STATE</string>
          <rect>
           <x>0</x>
           <y>10</y>
-          <width>151</width>
-          <height>161</height>
+          <width>240</width>
+          <height>262</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_18">
@@ -6216,7 +9098,7 @@ STATE</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>13</pointsize>
+        <pointsize>7</pointsize>
         <italic>false</italic>
        </font>
       </property>
@@ -6238,6 +9120,11 @@ STATE</string>
      <width>111</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>DCM 

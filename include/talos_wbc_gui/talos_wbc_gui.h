@@ -6,6 +6,8 @@
 
 #include <sensor_msgs/Imu.h>
 #include <sensor_msgs/JointState.h>
+#include <nav_msgs/Odometry.h>
+
 #include <ros/macros.h>
 
 #include <QList>
@@ -32,8 +34,11 @@
 #include <QGraphicsView>
 #include <QStringListModel>
 
-#include <eigen3/Eigen/Core>
-#include <eigen3/Eigen/Geometry>
+// #include <eigen3/Eigen/Core>
+// #include <eigen3/Eigen/Geometry>
+
+#include <tf/tf.h>
+#include <tf/transform_listener.h>
 
 namespace talos_wbc_gui {
 
@@ -78,30 +83,34 @@ protected slots:
   virtual void timercb(const rosgraph_msgs::ClockConstPtr &msg);
   virtual void jointcb(const sensor_msgs::JointStateConstPtr &msg);
   virtual void forcecb(const geometry_msgs::WrenchStampedConstPtr &msg);
-  virtual void imucb(const sensor_msgs::ImuConstPtr &msg);
+  // virtual void imucb(const sensor_msgs::ImuConstPtr &msg);
+  virtual void pelviscb(const nav_msgs::OdometryConstPtr &msg);
 
   virtual void jstatebtn();
   virtual void sstatebtn();
 
 private:
   ros::Time robot_time;
-  Eigen::Vector3d imu_rpy;
-  Eigen::Quaterniond imu_quat;
+  // Eigen::Vector3d imu_rpy;
+  // Eigen::Quaterniond imu_quat;
   ros::NodeHandle nh_;
 
 public: 
   ros::Subscriber timesub; // for ros time
   ros::Subscriber jointsub; // for joint information
   std::vector<ros::Subscriber> forcesubs; // for force sensor
-  ros::Subscriber imusub;
+  // ros::Subscriber imusub;
+  ros::Subscriber pelvissub;
+  tf::TransformListener tf_listener; // for transformation
   
 
 signals:
   void TimerCallback(const rosgraph_msgs::ClockConstPtr &msg);
   void JointStateCallback(const sensor_msgs::JointStateConstPtr &msg);
   void ForceSensorCallback(const geometry_msgs::WrenchStampedConstPtr &msg);
-  void IMUSensorCallback(const sensor_msgs::ImuConstPtr &msg);
-
+  // void IMUSensorCallback(const sensor_msgs::ImuConstPtr &msg);
+  void PelvisSensorCallback(const nav_msgs::OdometryConstPtr &msg);
+  
 private:
   Ui::TalosWBCGuiWidget ui_;
   QWidget* widget_;
@@ -116,5 +125,6 @@ Q_DECLARE_METATYPE(sensor_msgs::ImuConstPtr);
 Q_DECLARE_METATYPE(sensor_msgs::JointStateConstPtr);
 Q_DECLARE_METATYPE(std_msgs::Int32MultiArrayConstPtr);
 Q_DECLARE_METATYPE(rosgraph_msgs::ClockConstPtr);
+Q_DECLARE_METATYPE(nav_msgs::OdometryConstPtr);
 
 #endif // talos_wbc_gui
